@@ -80,7 +80,7 @@ body {
 
 #home {
     background-color: whitesmoke;
-    background-image: url("/home/omar/Escritorio/FCC/Portfolio/Images/bgi.jpg");
+    background-image: url(/portfolio/Images/bgi.jpg");
     background-size: cover;
     background-attachment: fixed;  
     color: white;

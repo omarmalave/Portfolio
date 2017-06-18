@@ -556,11 +556,12 @@ a:link {
 
     .social-media {
         float: right;
+        margin-top: 0.3vh!important;
     }
 
     .social-media img {
-       height: 9vh;
-       width: 9vh;
+       height: 8vh;
+       width: 8vh;
        margin-left: 0.7vh;
        margin-right: 0.7vh;
        margin-top: 1.5vh;

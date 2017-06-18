@@ -11,6 +11,8 @@
         <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
         <script src="https://use.fontawesome.com/1b3caf3d86.js"></script>
+        <script src='js/nprogress.js'></script>
+        <link rel='stylesheet' href='css/nprogress.css'/>
 
     </head>
     <body data-spy="scroll" data-target="#navbarNav" data-offset="60">
@@ -348,13 +350,31 @@
             </div>
             </footer>
         </div>
-
-
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
         <script src="js/contact.js"></script>
         <script src="js/portfolio.js"></script>
-    </body>
+        <script>
+            // Show the progress bar 
+            $("body").hide();
+            NProgress.start();
+            
+            // Increase randomly
+            var interval = setInterval(function() { NProgress.inc(); }, 1000);        
+
+            // Trigger finish when page fully loaded
+            $(document).ready(function () {
+                clearInterval(interval);
+                NProgress.done();
+                $("body").show();
+            });
+
+            // Trigger bar when exiting the page
+            jQuery(window).unload(function () {
+                NProgress.start();
+            });
+    </script>
 </html>

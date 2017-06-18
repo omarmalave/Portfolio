@@ -13,21 +13,6 @@
         <script src="https://use.fontawesome.com/1b3caf3d86.js"></script>
         <script src='js/nprogress.js'></script>
         <link rel='stylesheet' href='css/nprogress.css'/>
-        <script>
-        // Show the progress bar 
-        $("body").hide();
-        NProgress.start();
-        
-        // Increase randomly
-        var interval = setInterval(function() { NProgress.inc(); }, 1000);        
-
-        // Trigger finish when page fully loaded
-        $(document).ready(function () {
-            clearInterval(interval);
-            NProgress.done();
-            $("body").show();
-        });
-    </script>
 
     </head>
     <body data-spy="scroll" data-target="#navbarNav" data-offset="60">
@@ -372,4 +357,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
     <script src="js/contact.js"></script>
     <script src="js/portfolio.js"></script>
+    <script>
+        // Show the progress bar 
+        $("body").hide();
+        NProgress.start();
+        
+        // Increase randomly
+        var interval = setInterval(function() { NProgress.inc(); }, 1000);        
+
+        // Trigger finish when page fully loaded
+        $(document).ready(function () {
+            clearInterval(interval);
+            NProgress.done();
+            $("body").show();
+        });
+    </script>
 </html>

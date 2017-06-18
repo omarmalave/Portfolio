@@ -366,10 +366,10 @@
         var interval = setInterval(function() { NProgress.inc(); }, 1000);        
 
         // Trigger finish when page fully loaded
-        $(document).ready(function () {
+        $("#i").ready(function () {
             clearInterval(interval);
             NProgress.done();
-            $("body").show();
+            $("body").show();  
         });
     </script>
 </html>

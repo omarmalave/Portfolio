@@ -210,7 +210,7 @@ a:link {
     }
 
     p {
-        font-size: 2.2vw;
+        font-size: 2vw;
         margin-top: 2vw;
         margin-bottom: 1.5vw;  
     }
@@ -301,7 +301,7 @@ a:link {
 
     p {
         font-size: 3vh;
-        margin-top: 1.4vh;
+        margin-top: 2vh!important;
     }
 
     #home ul {
@@ -553,10 +553,14 @@ a:link {
         position: relative;
         height: 18vh;
     }
+    
+    #getInTouch h2 {
+        padding-left: 1.4vh;
+    }
 
     .social-media {
         float: right;
-        margin-top: 0.3vh!important;
+        margin-top: 0.4vh!important;
     }
 
     .social-media img {

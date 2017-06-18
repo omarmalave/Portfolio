@@ -16,7 +16,7 @@
 
     </head>
     <body data-spy="scroll" data-target="#navbarNav" data-offset="60">
-        <div class="container-fluid bg-inverse">
+        <div class="container-fluid bg-inverse d-none">
             <section id="Nav">
                 <div class="container-fluid" id="nav-container">
                     <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse">
@@ -358,18 +358,23 @@
     <script src="js/contact.js"></script>
     <script src="js/portfolio.js"></script>
     <script>
-        // Show the progress bar 
-        $("body").hide();
+        // Show the progress bar
         NProgress.start();
-        
+
+
         // Increase randomly
         var interval = setInterval(function() { NProgress.inc(); }, 1000);        
 
         // Trigger finish when page fully loaded
-        $("#i").ready(function () {
+        jQuery(window).on("load", function () {
             clearInterval(interval);
             NProgress.done();
-            $("body").show();  
+            $("body .container-fluid").removeClass("d-none");
+        });
+
+        // Trigger bar when exiting the page
+        jQuery(window).on("unload",function () {
+            NProgress.start();
         });
     </script>
 </html>

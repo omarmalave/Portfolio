@@ -182,7 +182,7 @@ a:link {
     background-color: white;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { /*phones portrait listo*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { /*phones portrait*/
     #i {
         margin-top: 25vw;
         width:55vw;
@@ -258,7 +258,7 @@ a:link {
 }
 
 
-/* Smartphones (landscape) ----------- done*/
+/* Smartphones (landscape)*/
 @media only screen and (min-device-width : 481px) and  (max-device-width : 767px){
     .navbar-brand {
         margin-left: 0vw!important;
@@ -494,7 +494,7 @@ a:link {
 
     #getInTouch h2 {
         margin-top: 1.7vh;
-    }
+    }/*tablets landscape*/
 }
 
 @media only screen  and (min-device-width : 1224px) {
@@ -578,7 +578,7 @@ a:link {
 
     #git-white {
         display: inline-block!important;
-    }
+    }/*Desktops fullscreen*/
 }
 
 @media only screen  and (min-device-width : 1224px) and (max-width: 1003px){
@@ -667,5 +667,5 @@ a:link {
 
     #git-white {
         display: inline-block!important;
-    }
+    }/*Desktops on resize*/
 }

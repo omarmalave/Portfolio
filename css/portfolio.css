@@ -497,7 +497,7 @@ a:link {
     }
 }
 
-@media only screen  and (min-width : 1224px) {
+@media only screen  and (min-device-width : 1224px) {
 
     #portfolio-grid {
         display: flex!important;
@@ -508,8 +508,8 @@ a:link {
     }
 
     #i {
-        margin-top: 10vh;
-        width:40h;
+        margin-top: 9vh;
+        width:40vh;
         height: 40vh;
     }
 
@@ -579,7 +579,93 @@ a:link {
     #git-white {
         display: inline-block!important;
     }
+}
 
+@media only screen  and (min-device-width : 1224px) and (max-width: 1003px){
+
+    .navbar-brand {
+        margin-left: 0vw!important;
+    }
+
+    #portfolio-grid {
+        display: flex!important;
+    }
+
+    #contact {
+        display: block!important;
+    }
+
+    #i {
+        margin-top: 7vh;
+        width:34vh;
+        height: 34vh;
+    }
+
+    h1 {
+        font-size: 12vh;
+    }
+
+    h2 {
+        font-size: 8vh;
+    }
+
+    h3 {
+        font-size: 7vh;
+    }
+
+    h4 {
+        font-size: 4vh;
+    }
+
+    footer p {
+        font-size: 2vh;
+        margin-top: 1.4vh;
+    }
+
+    #home ul {
+        margin-top: 3vh;
+    }
+
+    #home i {
+        font-size: 5vh;
+
+    }
+
+    #divider {
+        display: none;
+    }
     
+    #getInTouch {
+        background-color: #0275d8!important;
+        color: white;
+        position: relative;
+        height: 18vh;
+    }
+    
+    #getInTouch h2 {
+        padding-left: 1.4vh;
+        font-size: 7vh;
+    }
 
+    .social-media {
+        float: right;
+        margin-top: 0.4vh!important;
+    }
+
+    .social-media img {
+       height: 5.5vw;
+       width: 5.5vw;
+       margin-left: 0.7vh;
+       margin-right: 0.7vh;
+       margin-top: 1.5vh;
+       margin-bottom: 2vh;
+    }
+
+    #gmail {
+        display: none!important;
+    }
+
+    #git-white {
+        display: inline-block!important;
+    }
 }

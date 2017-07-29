@@ -80,12 +80,18 @@ body {
 
 #home {
     background-color: whitesmoke;
-    background-image: url("/portfolio/Images/bgi.jpg");
+    background-image: url("/home/omar/Documentos/Github/portfolio/Images/bgi.jpg");
     background-size: cover;
     background-attachment: fixed;  
     color: white;
     font-weight: bold;
     height: 100vh;
+}
+
+.img-thumbnail {
+    padding: .09rem;
+    background-color: #292b2c;
+    border: 1px solid #292b2c;
 }
 
 #home ul {
@@ -202,7 +208,7 @@ a:link {
     }
 
     h3 {
-        font-size: 8vw;
+        font-size: 7vw;
     }
 
     h4 {

@@ -116,6 +116,7 @@ body {
     -webkit-box-shadow: 0px 2px 33px -3px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 2px 33px -3px rgba(0,0,0,0.75);
     box-shadow: 0px 2px 33px -3px rgba(0,0,0,0.75);
+    height: 216px;
 }
 
 #getInTouch {
@@ -173,6 +174,11 @@ label {
         -webkit-box-shadow: 0px 2px 33px -3px rgba(0,0,0,0.75);
         -moz-box-shadow: 0px 2px 33px -3px rgba(0,0,0,0.75);
         box-shadow: 0px 2px 33px -3px rgba(0,0,0,0.75);
+
+}
+
+#portfolio-carousel img {
+    height: 216px;
 }
 
 a:link {
@@ -263,7 +269,6 @@ a:link {
     }
 }
 
-
 /* Smartphones (landscape)*/
 @media only screen and (min-device-width : 481px) and  (max-device-width : 767px){
     .navbar-brand {
@@ -347,7 +352,6 @@ a:link {
         margin-top: 1.7vh;
     }
 }
-
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){ /*tablets portrait*/
     .navbar-brand {

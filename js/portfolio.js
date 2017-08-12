@@ -35,6 +35,22 @@ $(document).ready(function(){
             $('.navbar').addClass('navbar-inverse');
         }
     });
+
+    $("#form_message").keyup(function() {
+        contact();
+    });
 });
+
+var contact = function() {
+    var name = $("#form_name").val();
+    var last = $("#form_lastname").val();
+    var phone = $("#form_phone").val();
+    var msg = $("#form_message").val();
+    var email = $("#form_email").val();
+    msg = encodeURI(msg + "\n\n\n" + name + " " + last + "\n" + email + "\n" + phone);
+
+    $("#send").attr("onclick", "location.href='mailto:omarmalave21@gmail.com?subject=Hi!" + "&body=" + msg + "'");
+
+};
 
 

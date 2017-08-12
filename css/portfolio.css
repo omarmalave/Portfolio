@@ -566,6 +566,7 @@ a:link {
         color: white;
         position: relative;
         height: 18vh;
+        padding-top: 2.5rem !important;
     }
     
     #getInTouch h2 {

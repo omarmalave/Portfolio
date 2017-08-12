@@ -36,9 +36,9 @@ $(document).ready(function(){
         }
     });
 
-    $("#form_message").keyup(function() {
-        contact();
-    });
+    // $("#form_message").keyup(function() {
+    //     contact();
+    // });
 });
 
 var contact = function() {

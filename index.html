@@ -276,7 +276,7 @@
                         </div>
 
                         <div class="container mt-5 d-none" id="contact">
-                            <form id="contact-form" action="" method="GET" role="form">
+                            <form id="gform" action="https://script.google.com/macros/s/AKfycbzgiqXTuOZYQuKoCseYxQdHKPcYGLVP48pzwDYznwR57n5Axec/exec" method="POST" role="form">
 
                                 <div class="messages"></div>
 
@@ -285,15 +285,8 @@
                                     <div class="row">
                                         <div class="col">
                                             <div class="form-group">
-                                                <label for="form_name">Firstname *</label>
-                                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="form-group">
-                                                <label for="form_lastname">Lastname *</label>
-                                                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                                <label for="name">Name: </label>
+                                                <input id="name" type="text" name="name" class="form-control" placeholder="Please enter your name *" required="required" data-error="Name is required.">
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
@@ -301,15 +294,8 @@
                                     <div class="row">
                                         <div class="col">
                                             <div class="form-group">
-                                                <label for="form_email">Email *</label>
-                                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="form-group">
-                                                <label for="form_phone">Phone</label>
-                                                <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                                                <label for="email">Email: </label>
+                                                <input id="email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
@@ -317,8 +303,8 @@
                                     <div class="row">
                                         <div class="col">
                                             <div class="form-group">
-                                                <label for="form_message">Message *</label>
-                                                <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave me a message."></textarea>
+                                                <label for="message">Message: </label>
+                                                <textarea id="message" name="message" class="form-control" placeholder="Message for me: " rows="4" required="required" data-error="Please, leave me a message."></textarea>
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
@@ -329,12 +315,15 @@
                                     </div>
                                     <div class="row">
                                         <div class="col mt-1">
-                                            <p class="text-muted mt-2 mb-4"><strong>*</strong> These fields are required.</p>
+                                            <p class="text-muted mt-2 mb-4"><strong>*</strong> All fields are required.</p>
                                         </div>
                                     </div>
                                 </div>
-
                             </form>
+                            <div class="row mb-5 mx-auto text-primary" style="display:none;" id="thankyou_message">
+                                <h2><em>Thanks</em> for contacting me!
+                                  I will get back to you soon!</h2>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -355,7 +344,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
-    <script src="js/contact.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
     <script src="js/portfolio.js"></script>
     <script>
         // Show the progress bar
